@@ -27,4 +27,4 @@ accountCity = "Delhi";
 // ek sath main anek output dikhane ke liye:
 // console.log(accountId, accountEmail, accountPassword, accountCity);
 // console.table([a, b, c])
-console.table([accountId, accountEmail, accountPassword, accountCity]);
+// console.table([accountId, accountEmail, accountPassword, accountCity]);
