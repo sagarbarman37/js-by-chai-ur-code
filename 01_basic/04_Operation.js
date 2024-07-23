@@ -34,3 +34,7 @@ let count = 10;
 // console.log(count);
 
 // video no- 7
+
+let x = 6
+x += 1
+console.log(x)
