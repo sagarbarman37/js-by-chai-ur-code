@@ -35,6 +35,39 @@ let count = 10;
 
 // video no- 7
 
-let x = 6
-x += 1
-console.log(x)
+//*********** Operator **********
+
+// console.log(2 > 1); // true
+// console.log(2 >= 1); // true
+// console.log(2 < 1); // false
+// console.log(2 <= 1); // false
+// console.log(2 == 1); // false
+// console.log(2 != 1); // true
+
+// console.log("2" > 1); // true
+// console.log("02" > 1); // true
+
+let val = null;
+let numVal = Number(val);
+// console.log(numVal);// output => 0
+
+// console.log(null > 0); // false
+// console.log(null <= 0); // true
+// console.log(null == 0); // false
+
+let num;
+let undNum = Number(num);
+// console.log(undNum); // output => NaN
+
+// console.log(undefined > 0); // false
+// console.log(undefined <= 0); // false
+// console.log(undefined == 0); // false
+// console.log(undefined != 0); // true
+
+// === strick comperision operator
+// check the data type
+// console.log("3" === 3); // false
+// console.log(0 === ""); // false
+// console.log(true === 1); // false
+// console.log("sagar" === "suman"); // false
+// console.log("3" === "3"); // true
