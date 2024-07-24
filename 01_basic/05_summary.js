@@ -13,6 +13,8 @@ const bigNumber = 435786578087465n;
 
 // non-primitive data type / reference data type
 
+// non-primitive main value change karte hain to Original value main change hota hain.
+
 // Array, Objects, Functions
 
 const fruits = ["apple", "mango", "banana", "orange"];
