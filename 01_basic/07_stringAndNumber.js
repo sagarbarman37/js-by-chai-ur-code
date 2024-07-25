@@ -57,5 +57,11 @@ const thousand = 1000000;
 // console.log(Math.min(2, 4, 5, 7, 8)); // 2
 // console.log(Math.max(2, 4, 5, 7, 8)); // 8
 
-console.log(Math.random()); // 0-1
-console.log(Math.random() * 6 + 1);
+// console.log(Math.random()); // 0-1
+// console.log(Math.random() * 6 + 1);
+
+const min = 10;
+const max = 20;
+
+const randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
+console.log(randomNumber);
