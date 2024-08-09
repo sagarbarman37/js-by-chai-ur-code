@@ -22,12 +22,12 @@ const newArray = myArr.join() //Adds all the elements of an array into a string
 // console.log(newArray);
 // console.log(typeof newArray); //type --> String
 
-console.log(myArr);
+// console.log(myArr);
 
-const newArr1 = myArr.slice(1, 3)
-console.log("slice", myArr);
-console.log("slice", newArr1);
+const newArr1 = myArr.slice(1, 3) //original array connot menipulate
+// console.log("slice", myArr);
+// console.log("slice", newArr1);
 
-const newArr2 = myArr.splice(2, 5)
-console.log("splice", myArr);
-console.log("splice", newArr2);
+const newArr2 = myArr.splice(2, 5) // original array menipulate
+// console.log("splice", myArr);
+// console.log("splice", newArr2);
