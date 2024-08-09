@@ -13,3 +13,21 @@ myArr.pop()  // item deleted, end of the array.
 myArr.unshift(9) // item added, stat of the array.
 myArr.shift() // item delete, start of the array.
 // console.log(myArr);
+
+// console.log(myArr.includes(4));// Boolean // item there or not.
+// console.log(myArr.indexOf(4)); // How many numbers are in the index?
+
+
+const newArray = myArr.join() //Adds all the elements of an array into a string
+// console.log(newArray);
+// console.log(typeof newArray); //type --> String
+
+console.log(myArr);
+
+const newArr1 = myArr.slice(1, 3)
+console.log("slice", myArr);
+console.log("slice", newArr1);
+
+const newArr2 = myArr.splice(2, 5)
+console.log("splice", myArr);
+console.log("splice", newArr2);
