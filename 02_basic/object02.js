@@ -83,3 +83,20 @@ const { courseInstructor: instructor } = course;
 console.log(instructor);
 
 // APIs concept
+
+// API JSON format main ata hai
+// API Object
+//        {
+//          "courseName": "JavaScript",
+//          "price": "499",
+//          "courseInstructor": "Hitesh ",
+//        }
+
+// API Array
+//        [
+//          {},
+//          {},
+//          {},
+//        ]
+
+// video no - 18
