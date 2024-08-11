@@ -16,7 +16,8 @@ const tinderuser = {};
 // console.log(Object.entries(tinderuser)); // [ [ 'id', '134abcd' ], [ 'email', 'something@gmail.com' ],  [ 'isLoggedIn', false ]]
 // output Array main ata hain
 
-console.log(tinderuser.hasOwnProperty("email"));
+// console.log(tinderuser.hasOwnProperty("email"));  // true
+// Aap ka key object main hain yan nehi.
 
 // nested Object
 const regulerUser = {
@@ -64,3 +65,21 @@ const user = [
 // console.log(user[3][id]); // ReferenceError: id is not defined
 
 // video no - 17
+
+// Destracture of Object:-
+
+const course = {
+  courseName: "JavaScript",
+  price: "499",
+  courseInstructor: "Hitesh ",
+};
+
+// console.log(course.courseInstructor); // normal values
+
+const { courseInstructor } = course; // Destracture values
+// console.log(courseInstructor);
+// if your keys name so big then you change it⤵️
+const { courseInstructor: instructor } = course;
+console.log(instructor);
+
+// APIs concept
