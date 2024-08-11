@@ -60,6 +60,6 @@ let sum2 = 200
 let sum3 = 300
 let sum4 = 400
 
-let allSum = Array.of(sum, sum2, sum3, sum4)
-console.log(allSum)
+let allSum = Array.of(sum, sum2, sum3, sum4); // [100,200,300,400]
+// console.log(allSum)
 
