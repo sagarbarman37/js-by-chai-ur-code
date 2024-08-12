@@ -54,3 +54,49 @@ function sendMassage(name = "sam") {
 // console.log(sendMassage("")); // enter your name
 
 // video nol -> 19
+
+function calculatePrice(...price) {
+  return price;
+}
+
+let calPrice = calculatePrice(12, 343, 3534, 1145);
+// console.log(calPrice); // [ 12, 343, 3534, 1145 ]
+
+// function calculatePrice(num1, num2, ...price) {
+//   return price;
+// }
+
+// let calPrice = calculatePrice(12, 343, 3534, 1145);
+// console.log(calPrice); // [ 3534, 1145 ]
+
+//👉 How to handle Object in Function:-
+
+const buy = {
+  name: "T-shirt",
+  price: 299,
+};
+
+function shopping(add) {
+  return `I bought one ${add.name}, price is ${add.price}`; // paramiter handle this Object.
+}
+// console.log(shopping(buy));
+// another way to declear⤵️
+//    console.log(
+//      shopping({
+//        name: "Full-shirt",
+//        price: 399,
+//      })
+//    );
+
+//👉 How to handle Array in Function:-
+
+const newArr = [214, 544, 465, 657, 256];
+
+function returnArray(arr) {
+  return arr[2];
+}
+console.log(returnArray(newArr)); //465
+// another way to declear⤵️
+console.log(returnArray([321, 451, 544, 234, 465]));
+
+// video no -> 20
