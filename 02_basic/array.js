@@ -39,11 +39,11 @@ const dc_hero = ["superman", "flash", "batman"];
 // console.log(marvel_hero[3][1]); // access the dc_hero
 
 //concat operator
-let allHero = marvel_hero.concat(dc_hero); // 
+let allHero = marvel_hero.concat(dc_hero); //
 // console.log(allHero); // ["Thior", "Ironman", "Spiderman", "superman", "flash", "batman"]
 
 // sprade operator
-let allNewHero = [...marvel_hero, ...dc_hero]
+let allNewHero = [...marvel_hero, ...dc_hero];
 // console.log(allNewHero);// ["Thior", "Ironman", "Spiderman", "superman", "flash", "batman"]
 
 const anotherArray = [1, 2, 3, [4, 5, 6], 7, [8, 9, [10, 11]]];
@@ -51,15 +51,16 @@ const onlyOneAnotherArray = anotherArray.flat(Infinity); // value will 1 to Infi
 // console.log(onlyOneAnotherArray); //[1,2,3,4,5,6,7,8,9,10,11]
 
 // console.log(Array.isArray("sagar")); // check it is Array or not.
-// console.log(Array.from("sagar")); // creat string to Array. 
+// console.log(Array.from("sagar")); // creat string to Array.
 // console.log(Array.from({ name: "sagar" }));// []  (it is interesting case.)
 
 // many variable intu One Array
-let sum = 100
-let sum2 = 200
-let sum3 = 300
-let sum4 = 400
+// Array combine:-
+
+let sum = 100;
+let sum2 = 200;
+let sum3 = 300;
+let sum4 = 400;
 
 let allSum = Array.of(sum, sum2, sum3, sum4); // [100,200,300,400]
 // console.log(allSum)
-

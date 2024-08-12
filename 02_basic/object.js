@@ -49,3 +49,5 @@ Object.freeze(JsUser); // Object was Freezed,
 
 JsUser.email = "sumanb@gmail.com"; // Object was Freezed, email can't be change.
 // console.log(JsUser);
+
+// Video no - 16
