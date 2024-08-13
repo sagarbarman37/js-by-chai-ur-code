@@ -53,7 +53,7 @@ function sendMassage(name = "sam") {
 // console.log(sendMassage()); // sam send a massage
 // console.log(sendMassage("")); // enter your name
 
-// video nol -> 19
+// video no -> 19
 
 function calculatePrice(...price) {
   return price;
