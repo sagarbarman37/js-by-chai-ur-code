@@ -53,6 +53,7 @@ if (true) {
 // console.log(name); //ReferenceError: website is not defined
 
 //+++++++++++++++++ Interesting +++++++++++++++
+// Cannot access before initialization, this is called Hoisting.
 
 // console.log(addOne(5)); // 6
 
