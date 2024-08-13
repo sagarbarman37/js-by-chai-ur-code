@@ -12,11 +12,11 @@ console.log(c); // 30
 if (true) {
   // block scopie
   var a = 100;
-  console.log("inner: ", a);
   let b = 200;
-  console.log("inner: ", b);
   const c = 300;
-  console.log("inner: ", c);
+  //   console.log("inner: ", a); // inner:  100
+  //   console.log("inner: ", b); // inner:  200
+  //   console.log("inner: ", c); // inner:  300
 }
 // console.log(a); // 100
 // console.log(b); // b is not defined
