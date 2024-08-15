@@ -33,7 +33,7 @@ if (Object.keys(emptyObj).length === 0) {
 // false == ""; // true
 // 0 == ""; // true
 
-// Nullish Coalescing Operator (??): null undefined
+// Nullish Coalescing Operator (??): null undefined ⤵️⤵️⤵️⤵️⤵️⤵️
 
 let val1;
 // val1 = 5 ?? 10; // 5
