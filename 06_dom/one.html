@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Learning</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <div class="bg-black">
+      <h1 id="title" class="heading">
+        DOM learning leacture by Hitesh<span style="display: none"></span>
+          Choudhary</span
+        >
+      </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi?</p>
+
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    //     document.getElementById("title");
+    //     document.getElementById("title").id
+    // 'title'
+    // document.getElementById("title").className
+    // 'heading'
+    // document.getElementById("title").getAttribute
+    // ƒ getAttribute() { [native code] }
+    // document.getElementById("title").getAttribute('id')
+    // 'title'
+    // document.getElementById("title").getAttribute('class')
+    // 'heading'
+    //     document.getElementById("title").setAttribute("class", "test");
+    //     undefined;
+    //     document.getElementById("title").setAttribute("class", "test heading");
+    //
+
+    // .innerHTML
+    // .innerText
+    // .textContent
+
+    // document.getElementsByClassName('heading')
+    // HTMLCollection [h1#title.heading, title: h1#title.heading]
+
+    // Selector:-
+    // document.querySelector("h1");
+    // document.querySelector("#title");
+    // document.querySelector(".heading");
+    // document.querySelector("input[type='password']");
+    // document.querySelector("p:first-child");
+    
+    //first element ka backgroound color change:-
+    const ul = document.querySelector('ul')
+    const bgChange = ul.querySelector('li')
+    bgChange.style.backgroundColor = 'green'
+    bgChange.style.padding = '10px'
+    
+  </script>
+</html>
