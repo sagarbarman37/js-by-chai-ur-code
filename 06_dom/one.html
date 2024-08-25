@@ -14,9 +14,10 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi?</p>
 
       <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+        <li class="item">one</li>
+        <li class="item">two</li>
+        <li class="item">three</li>
+        <li class="item">four</li>
       </ul>
     </div>
   </body>
@@ -54,8 +55,37 @@
     //first element ka backgroound color change:-
     const ul = document.querySelector('ul')
     const bgChange = ul.querySelector('li')
-    bgChange.style.backgroundColor = 'green'
-    bgChange.style.padding = '10px'
+    // bgChange.style.backgroundColor = 'green'
+    // bgChange.style.padding = '10px'
+
+    // const listItem = document.querySelectorAll('li'); //=> NodeList
+    // (NodeLists === Array);// false
+    //nodeList convert to Array:-
+    // Array.from(listItem);// Now it's a Array
+    
+    // How to color change:-
+    // const listItem = document.querySelectorAll('li'); //=> NodeList
+    // // console.log(listItem[1]);
+    // listItem[1].style.backgroundColor = 'red';
+
+
+    //👉 document.querySelectorAll() always return NodeList
+    // page main h1 tag 1 hai lekin querySelectorAll use karnese ye hita hai-
+    // const heading = document.querySelectorAll('h1')
+    // console.log(heading); //NodeList [h1#title.heading]
+    // heading[0].style.color = 'green'
+
+    //👉👉 NodeList is not equal to HTMLCollection
+    // const allList = document.getElementsByClassName('item'); // HTMLCollection
+    // const convList = Array.from(allList);
+    // convList[2].style.color = 'red'
+    // convList.forEach((el)=>{
+    //   el.style.color = 'orange'
+    // })
+    
+
+    
+    
     
   </script>
 </html>
