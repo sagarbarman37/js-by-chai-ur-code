@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const requesteUrl = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requesteUrl);
+    // console.log(xhr.readyState); // 1
+    xhr.onreadystatechange = function () {
+      // console.log(xhr.readyState); // 1 2 3 4
+      if (xhr.readyState === 4) {
+        // console.log(this.responseText); // return full object format
+        // const data = this.responseText; // mostly data return in String
+        // console.log(typeof data); // string
+
+        // chech the data type
+        // string to Object
+        const data = JSON.parse(this.responseText);
+        // console.log(typeof data); // Object
+        console.log(data.followers);
+      }
+    };
+    xhr.send();
+  </script>
+</html>
