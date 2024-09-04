@@ -11,7 +11,7 @@
 
 ## parts of OOP
 
-Object loteral
+Object literal
 
 - Constructor function
 - Prototypes
