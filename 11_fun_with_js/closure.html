@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+  </body>
+  <script>
+    function outer() {
+      let outername = "sagar barman";
+
+      function inner() {
+        let username = "inner";
+        // console.log(name); // sagar barman
+      }
+
+      function innreTwo() {
+        // console.log(name); // sagar barman
+        // console.log(username); // ReferenceError: username is not defined at outer
+      }
+      inner();
+      innreTwo();
+      //   console.log(username); // ReferenceError: username is not defined at outer
+    }
+    // outer();
+    // console.log(outername); //ReferenceError: username is not defined at outer
+
+    // closure 👉👉⤵️⤵️
+
+    function makeFunc() {
+      const name = "chrome";
+      function displayName() {
+        console.log(name);
+      }
+      return displayName;
+    }
+    const myFunc = makeFunc();
+    // myFunc();
+  </script>
+  <!--second script-->
+  <script>
+    // document.querySelector("#orange").onclick = function () {
+    //   document.body.style.backgroundColor = "orange";
+    // };
+    // document.querySelector("#green").onclick = function () {
+    //   document.body.style.backgroundColor = "green";
+    // };
+    // 👉👉 If 500 button what can you do??
+    // closure Example:-
+    function clickHandler(color) {
+      // document.body.style.backgroundColor = `${color}`;
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+      };
+    }
+
+    const orange = document.querySelector("#orange");
+    // orange.onclick = clickHandler("orange");
+    orange.addEventListener("click", clickHandler("orange"));
+    document.querySelector("#green").onclick = clickHandler("green");
+
+    // Other Example:-
+    // const button = document.querySelectorAll("button");
+    // button.forEach((btn) => {
+    //   btn.addEventListener("click", (e) => {
+    //     if (e.target.id) {
+    //       document.body.style.backgroundColor = `${e.target.id}`;
+    //     }
+    //   });
+    // });
+  </script>
+</html>
